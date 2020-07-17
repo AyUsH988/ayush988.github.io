@@ -757,6 +757,7 @@ var StatusComponentComponent = /** @class */ (function () {
     StatusComponentComponent.prototype.getStatusOfCity = function (event) {
         this.selectedCity = event;
         this.cityTotalChartData = [];
+        this.cityLatestChartData = [];
         console.log('city', event);
         this.activeCityStatus = this.districtList[this.selectedStateForCity]['districtData'][event];
         this.cityTotalChartData.push(this.activeCityStatus.deceased);
